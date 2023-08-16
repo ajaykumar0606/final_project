@@ -49,6 +49,9 @@ function About() {
             value={namelist}
             onChange={(n) => {
               setNamelist(n.target.value);
+               required: {
+            value: true,
+            message: 'required',
             }}
           ></input>
           {error.namelist && <p>{error.namelist}</p>}
